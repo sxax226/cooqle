@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>サンプル</title>
+<meta name="robots" content="noindex,nofollow" />
+<link rel="stylesheet" href="./css/reset.css" />
+<link rel="stylesheet" href="./css/style.css" />
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script type="text/javascript">
+$(function(){
+  $('.btn-trigger').on('click', function() {
+    $(this).toggleClass('active');
+    return false;
+  });
+});
+</script>
+</head>
+<body>
+<div id="wrapper">
+<header>
+	<ul id="leftMenu">
+		<li>Cooqleについて</li>
+		<li>ストア</li>
+	<!-- #leftMenu --></ul>
+	<section id="menuSP">
+	    <div class="btn-trigger" id="btn01">
+	      <span></span>
+	      <span></span>
+	      <span></span>
+    	</div>
+  	</section>
+	<ul id="rightMenu">
+		<li>Mail</li>
+		<li>画像</li>
+		<li id="user"><span>R</span></li>
+	<!-- #rightMenu --></ul>
+</header>
+
+<div id="mainArea">
+	<h1><img src="img/logo.png" alt="ロゴ"></h1>
+	<input type="search"><br>
+	<input type="button" value="検索" name="search"  onclick="location.href='./result1.html'" >
+</div>
+
+<footer>
+	<ul>
+		<li>プライバシー</li>
+		<li>規約</li>
+		<li>設定</li>
+	</ul>
+</footer>
+<!-- wrapper --></div>
+</body>
+</html>

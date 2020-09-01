@@ -139,7 +139,7 @@ ul {
 	    border: 1px solid #c0c0c0;
 	    border-radius: 8rem;
 	    height: 3.9rem;
-	    
+	    font-size: 1.6rem;
 }
 
 #wrapper div#mainArea input[type="button"]{
@@ -151,6 +151,7 @@ ul {
 		color:#666;
 		border-radius: 0.6rem;
 		max-width: 240px;
+		font-size: 1.6rem;
 }
 
 /** =============================

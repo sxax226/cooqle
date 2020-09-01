@@ -111,6 +111,28 @@ ul {
 		top: 6px;
 }
 
+#wrapper footer {
+	position: absolute;
+	bottom: 0;
+	background:#f2f2f2;
+	width: 100%;
+	border-top: 1px solid #ccc;
+}
+
+
+#wrapper footer ul {
+		display: flex;
+		justify-content: flex-end;
+		padding: 1rem;
+		background: #f2f2f2;
+}
+
+#wrapper footer ul  li {
+		margin: 0 0.6rem;
+		color:#666;
+}
+
+
 /** =============================
   index
 =============================== **/
@@ -155,7 +177,7 @@ ul {
 }
 
 /** =============================
-  result
+  result1
 =============================== **/
 #wrapper header {
 	padding: 0 8px;
@@ -309,31 +331,39 @@ ul {
 		line-height: 1.6;
 }
 
-
-#wrapper footer {
-	position: absolute;
-	bottom: 0;
-	background:#f2f2f2;
-	width: 100%;
-	border-top: 1px solid #ccc;
-}
-
 #wrapper footer#resultfooter {
 	position: static;
 	margin-top: 1rem;
 }
 
-#wrapper footer ul {
-		display: flex;
-		justify-content: flex-end;
-		padding: 1rem;
-		background: #f2f2f2;
-}
 
-#wrapper footer ul  li {
-		margin: 0 0.6rem;
-		color:#666;
+/** =============================
+  result2
+=============================== **/
+
+#wrapper #resultArea #main.notfound {
+	padding: 1.6rem;
+	font-size: 1.4rem;
 }
+#wrapper #resultArea #main.notfound h3 {
+	font-size: 1.5rem;
+	font-weight: 400;
+	margin-bottom: 2rem;
+	line-height:1.4;
+}
+#wrapper #resultArea #main.notfound h3 span { 
+	font-weight: 600;
+}
+#wrapper #resultArea #main.notfound p {
+	line-height: 1.4;
+    margin-bottom: 2rem;
+}
+#wrapper #resultArea #main.notfound ul {
+	list-style: disc;
+    line-height: 1.4;
+    margin-left: 1.6rem;
+}
+#wrapper #resultArea #main.notfound ul li{}
 
 /* SP */
 @media screen and (max-width:559px) {

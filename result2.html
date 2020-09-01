@@ -7,15 +7,62 @@
 <link rel="stylesheet" href="./css/reset.css" />
 <link rel="stylesheet" href="./css/style.css" />
 <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script type="text/javascript">
+$(function(){
+  $('.btn-trigger').on('click', function() {
+    $(this).toggleClass('active');
+    return false;
+  });
+});
+</script>
+
 </head>
 <body>
 <div id="wrapper">
 <header>
+<nav>
+	<section id="menuSP">
+	    <div class="btn-trigger" id="btn01">
+	      <span></span>
+	      <span></span>
+	      <span></span>
+    	</div>
+  	</section>
+  	<h1><img src="img/logo.png"></h1>
+	<ul id="rightMenu">
+		<li id="user"><span>R</span></li>
+	<!-- #rightMenu --></ul>
+</nav>
+<div id="searcharea">
+	<input  type="input" id="searchword" value="香港人 デモ 死者">
+<!-- searcharea --></div>
+<ul id="searchmenu">
+<li>すべて</li>
+<li>ニュース</li>
+<li>地図</li>
+<li>画像</li>
+<li>動画</li>
+<li>ショッピング</li>
+<li>書籍</li>
+<li>フライト</li>
+<li>検索ツール</li>
+<!-- #searchmenu --></ul>
 </header>
 
-<div id="resultArea" class="denied">
-<h1>センシティブな単語が含まれるため表示されません。</h1>
-</div>
+<div id="resultArea">
+	<section id="main" class="notfound">
+	<h3><span>香港人 デモ 死者</span> に一致する情報は見つかりませんでした。</h3>
+	<p>検索のヒント:</p>
+	<ul>
+	<li>キーワードに誤字・脱字がないか確認します。</li>
+	<li>別のキーワードを試してみます。</li>
+	<li>センシティブな単語が含まれるため表示されません。</li>
+	<li>もっと一般的なキーワードに変えてみます。</li>
+	<li>キーワードの数を減らしてみます。</li>
+	</ul>
+	<!-- #main --></section>
+
+<!-- #resultArea --></div>
 
 <footer>
 	<ul>

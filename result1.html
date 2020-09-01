@@ -7,21 +7,95 @@
 <link rel="stylesheet" href="./css/reset.css" />
 <link rel="stylesheet" href="./css/style.css" />
 <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script type="text/javascript">
+$(function(){
+  $('.btn-trigger').on('click', function() {
+    $(this).toggleClass('active');
+    return false;
+  });
+});
+</script>
+
 </head>
 <body>
 <div id="wrapper">
 <header>
+<nav>
+	<section id="menuSP">
+	    <div class="btn-trigger" id="btn01">
+	      <span></span>
+	      <span></span>
+	      <span></span>
+    	</div>
+  	</section>
+  	<h1><img src="img/logo.png"></h1>
+	<ul id="rightMenu">
+		<li id="user"><span>R</span></li>
+	<!-- #rightMenu --></ul>
+</nav>
+<div id="searcharea">
+	<input  type="input" id="searchword" value="香港">
+<!-- searcharea --></div>
+<ul id="searchmenu">
+<li>すべて</li>
+<li>ニュース</li>
+<li>地図</li>
+<li>画像</li>
+<li>動画</li>
+<li>ショッピング</li>
+<li>書籍</li>
+<li>フライト</li>
+<li>検索ツール</li>
+<!-- #searchmenu --></ul>
 </header>
 
 <div id="resultArea">
-香港<br>
-ちゅうかじんみんきょうわこくホンコンとくべつぎょうせいく<br>
-中国の特別行政区<br>
-内容<br>
-説明香港は中国南東部にある特別行政区で、かつてはイギリス植民地でした。活気に満ちた人口密度の高いこの都市は、主要な港としてだけでなく、超高層ビルが林立する世界的な金融都市としても知られています。商業地区である中環（セントラル）エリアには、イオ・ミン・ペイが設計した中国銀行タワーをはじめとする代表的な建物が立ち並んでいます。香港は、オーダーメイドの仕立屋や、テンプル ストリート ナイト マーケットなどのショッピング スポットでも有名です。
-</div>
+	<section id="main">
+		<div class="resultHeader">
+			<div class="map">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d236161.9430662399!2d113.98757104871694!3d22.35248245462958!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3403e2eda332980f%3A0xf08ab3badbeac97c!2z6aaZ5riv!5e0!3m2!1sja!2sjp!4v1598884279562!5m2!1sja!2sjp" width="800" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+			<!-- .map --></div>
+			<img src="img/china.png" alt="china" class="cnflag">
+			<h2>香港</h2>
+			<p>ちゅうかじんみんきょうわこくホンコンとくべつぎょうせいく<br>
+			<span>中国の特別行政区</span></p>
+		<!-- #retultHeader --></div>
+		<div class="summary">
+			<p>香港は中国南東部にある特別行政区で、かつてはイギリス植民地でした。活気に満ちた人口密度の高いこの都市は、主要な港としてだけでなく、超高層ビルが林立する世界的な金融都市としても知られています。商業地区である中環（セントラル）エリアには、イオ・ミン・ペイが設計した中国銀行タワーをはじめとする代表的な... <span>もっと見る</span></p>
+			<p><span>人口：1,000万(2032年)</span></p>
+		<!-- #summary --></div>
+		<div class="suggest">
+		<h3>他の人はこちらも検索</h3>
+		<!-- .suggest --></div>
+				<ul id="also">
+			<li>
+			<img src="img/macau.png">
+			<span>マカオ</span></li>
+			<li>
+			<img src="img/taiwan.png">
+			<span>台湾</span></li>
+			<li>
+			<img src="img/singapore.png">
+			<span>シンガポール</span></li>
+			<li>
+			<img src="img/china.png">
+			<span>中華人民共和国</span></li>
+		</ul>
 
-<footer>
+	<!-- #main --></section>
+
+<!--	<section class="results">
+		<div class="detail">
+			<p class="url"></p>
+			<h3>香港 - Wikipedia</h3>
+			<div class="resultContent">
+			<!-- .resultContent --><!-- </div> -->
+		<!-- .detail --><!-- </div> -->
+	<!-- .results --><!-- </section> -->
+
+<!-- #resultArea --></div>
+
+<footer id="resultfooter">
 	<ul>
 		<li>プライバシー</li>
 		<li>規約</li>
